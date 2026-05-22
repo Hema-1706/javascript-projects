@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f172a;
+  padding: 40px;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 42px;
+}
+
+.note-input {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 40px;
+}
+
+.note-input input,
+.note-input textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.note-input textarea {
+  height: 150px;
+  resize: none;
+}
+
+.note-input button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.note-input button:hover {
+  transform: scale(1.02);
+}
+
+#notesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.note-card h2 {
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.note-card p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.note-date {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.note-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.note-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.edit-btn {
+  background: #facc15;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
